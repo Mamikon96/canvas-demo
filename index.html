@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/huebee@2/dist/huebee.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="content">
+			<div class="canvas-wrapper">
+				<div class="canvas _main">
+					<canvas id="canvas" style="margin:0;padding:0;" width="500" height="500"></canvas>
+				</div>
+				<!-- <div class="canvas _background">
+					<canvas id="background-canvas" style="margin:0;padding:0;" width="500" height="500"></canvas>
+				</div> -->
+			</div>
+
+			<div class="actions">
+				<button data-id="clear-btn" class="actions__btn">Clear</button>
+				<button data-id="smooth-btn" class="actions__btn">Smooth</button>
+				<button data-id="save-btn" class="actions__btn">Save</button>
+				<button data-id="grid-btn" class="actions__btn">Grid</button>
+				<button data-id="select-color-btn" class="actions__btn">
+					<span class="actions__btn-text">Select Color</span>
+					<div class="actions__btn-status"></div>
+					<input type="color"></input>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.5.7/rxjs.umd.min.js"
+		integrity="sha512-MiYwnEfEqT5G1xAVakQk02nQONtyt4KfpD0FmOsmJcR1Xc5Ic1fhEm4piCH7fCtEKUJfCw6Q07IpsISlAePczQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://unpkg.com/huebee@2/dist/huebee.pkgd.min.js"></script>
+	<script type="module" src="main.js"></script>
+</body>
+
+</html>
