@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	/* position: relative; */
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1c1c1c;
+}
+
+.container {
+	/* position: relative; */
+	width: 500px;
+	height: 560px;
+	background-color: #eaeaea;
+}
+.container .content {
+	/* position: relative; */
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #1c1c1c;
+}
+
+.container .content .canvas-wrapper {
+	/* position: relative; */
+	width: 500px;
+	height: 500px;
+	outline: 2px solid #aaaaaa;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.container .content .canvas-wrapper .canvas {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.container .content .canvas-wrapper .canvas canvas {
+	/* position: absolute; */
+	width: 500px;
+	height: 500px;
+}
+.container .content .canvas-wrapper .canvas._main {
+	z-index: 200;
+}
+.container .content .canvas-wrapper .canvas._background {
+	z-index: -1;
+}
+
+.container .content .actions {
+	display: flex;
+	justify-content: space-evenly;
+}
+.container .content .actions .actions__btn {
+	width: 150px;
+	height: 35px;
+	/* background-color: #1c4bb3; */
+	background-color: #1c1c1c;
+	border: 2px solid #eeeeee;
+	border-radius: 20px;
+	color: #eeeeee;
+	cursor: pointer;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .content .actions .actions__btn:hover {
+	box-shadow: 1px 1px 1px #1c4bb3;
+	background-color: #1c4bb3;
+}
+.container .content .actions .actions__btn-status {
+	margin-left: 5px;
+	width: 12px;
+	height: 12px;
+	background-color: #00ff00;
+	border: none;
+	border-radius: 50%;
+}
+.container .content .actions .actions__btn-status + input {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
